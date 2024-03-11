@@ -1,0 +1,12 @@
+{
+    "port": 3000,
+    "db_config": {
+        "db": "postgres",
+        "username": "root",
+        "password": "123456",
+        "host": "localhost",
+        "port": 5432,
+        "dbname": "pms"
+    }
+}
+
