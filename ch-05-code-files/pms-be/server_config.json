@@ -1,0 +1,21 @@
+{
+	"port": 3000,
+	"db_config": {
+		"db": "postgres",
+		"username": "yamini",
+		"password": "yamini",
+		"host": "localhost",
+		"port": 5433,
+		"dbname": "pms-book"
+	},
+	"email_config": {
+        "from": "pms-support@pms.com",
+        "user": "pmsbook2023@gmail.com",
+        "password": "praxupuoanrgmhnb"
+    },
+    "front_app_url": "http://127.0.0.1:5000",
+	"default_user":{
+		"email":"superadmin@pms.com",
+		"password":"superAdmin"
+	}
+}
