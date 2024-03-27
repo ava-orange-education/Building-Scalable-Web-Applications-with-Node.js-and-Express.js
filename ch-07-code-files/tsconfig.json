@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "pretty": true,
+        "sourceMap": false,
+        "target": "ESNext",
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "alwaysStrict": true,
+        "forceConsistentCasingInFileNames": true,
+        "emitDecoratorMetadata": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true
+    },
+    "include": ["src/**/*.ts", "src/**/*.json","public/**/*"],
+    "exclude": ["node_modules"],
+    "files": ["node_modules/@types/node/index.d.ts"]
+}
