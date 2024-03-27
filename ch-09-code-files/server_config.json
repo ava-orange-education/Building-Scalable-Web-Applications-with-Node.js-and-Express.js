@@ -11,7 +11,7 @@
 	"email_config": {
         "from": "pms-support@pms.com",
         "user": "pmsbook2023@gmail.com",
-        "password": "praxupuoanrgmhnb"
+        "password": "*****"
     },
     "front_app_url": "http://127.0.0.1:5000",
 	"default_user":{
