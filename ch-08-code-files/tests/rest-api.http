@@ -1,0 +1,87 @@
+@baseurl = http://localhost:4500
+@baseurl-api = http://localhost:4500/api
+@accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtyYXZpLmd1cHRhQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoia3JhdmlndXB0YSIsImlhdCI6MTcwNDYyMTM1OSwiZXhwIjoxNzA0NjUwMTU5fQ.YI41tntTqMxzGRz4oA2qfmsYtnCP4lOoq0h-OK65URg
+
+### Ping
+GET {{baseurl}}/ping
+
+### Get all users
+GET {{baseurl-api}}/users
+Authorization: Bearer {{accessToken}}
+
+### Get Rights
+GET {{baseurl-api}}/rights
+
+### Get Roles
+GET {{baseurl-api}}/roles
+Authorization: Bearer {{accessToken}}
+
+### Login
+POST {{baseurl-api}}/login
+Content-Type: application/json
+
+{
+    "email": "kravi.gupta@gmail.com",
+    "password": "AdminSecret"
+}
+
+### Add User
+POST {{baseurl-api}}/users
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "name": "Ravi Gupta",
+    "fullname": "Ravi Gupta",
+    "email": "kravi.gupta@gmail.com",
+    "role_ids": ["f17885c2-d477-4534-b65a-7c00d54e8b32"],
+    "password": "AdminSecret",
+    "username": "kravigupta"
+}
+
+### Forgot Password
+POST {{baseurl-api}}/forgot_password
+Content-Type: application/json
+
+{
+    "email": "23.kriti@gmail.com"
+}
+
+### Get all projects
+GET {{baseurl-api}}/projects
+Authorization: Bearer {{accessToken}}
+
+
+### Add Project
+POST {{baseurl-api}}/projects
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "name": "Project 1",
+    "description": "Project 1",
+    "status": "active",
+    "start_time": "2024-01-08 10:57:07",
+    "end_time": "2025-01-07 10:57:07",
+    "user_ids": [
+        "92369d30-0524-465e-8534-9b29460a7318",
+        "3bd58e9c-4b2b-48d5-ad19-9efa68d149ea"
+        ]
+}
+
+
+### Add task
+POST {{baseurl-api}}/tasks
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "name": "Task 1",
+    "description": "Task 1",
+    "status": "active",
+    "estimated_start_time": "2024-01-08 10:57:07",
+    "estimated_end_time": "2025-01-07 10:57:07",
+    "project_id": "52620ecd-88ad-4c77-a4ea-f01475878b89",
+    "user_id": "92369d30-0524-465e-8534-9b29460a7318",
+    "status": "Not-Started"
+}
