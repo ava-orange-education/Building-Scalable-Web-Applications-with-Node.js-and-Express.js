@@ -1,0 +1,5 @@
+--require ts-node/register
+--require chai/register-assert
+--require chai/register-expect
+--require chai/register-should
+--require chai-http/register
