@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToOne, JoinColumn } from 'typeorm';
 import { Users } from '../users/users_entity';
 import { Projects } from '../projects/projects_entity';
 
@@ -27,14 +27,14 @@ export class Tasks {
     description: string;
 
     @Column()
-    @ManyToOne(() => Projects, (projectData) => projectData.project_id)
+    @OneToOne(() => Projects, (projectData) => projectData.project_id)
     @JoinColumn({ name: 'project_id' })
-    project_id: string;
+    project_id: Projects;
 
     @Column()
-    @ManyToOne(() => Users, (userData) => userData.user_id)
+    @OneToOne(() => Users, (userData) => userData.user_id)
     @JoinColumn({ name: 'user_id' })
-    user_id: string;
+    user_id: Users['user_id'];
 
     @Column()
     estimated_start_time: Date;
