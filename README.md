@@ -29,7 +29,7 @@ Node.js backend applications.
 
 ## More products
 
-1. [Building Scalable Web Apps With Node.Js And Express](https://orangeava.com/products/building-scalable-web-apps-with-node-js-and-express)
+1. [Ultimate Pandas For Data Manipulation And Visualization](https://orangeava.com/products/ultimate-pandas-for-data-manipulation-and-visualization)
 2. [Ultimate PowerShell Automation For System Administration](https://orangeava.com/products/ultimate-powershell-automation-for-system-administration)
 3. [Ultimate Cardano Smart Contracts](https://orangeava.com/products/ultimate-cardano-smart-contracts)
 
