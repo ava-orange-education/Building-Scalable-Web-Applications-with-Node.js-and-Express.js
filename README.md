@@ -1,7 +1,7 @@
-## Building Scalable Web Apps with Node.js and Express
+## Building Scalable Web Applications with Node.js and Express.js
 
 
-This is the repository for [Building Scalable Web Apps with Node.js and Express](https://orangeava.com/products/ultimate-powershell-automation-for-system-administration), published by Orange AVA™
+This is the repository for [Building Scalable Web Applications with Node.js and Express.js](https://orangeava.com/products/ultimate-powershell-automation-for-system-administration), published by Orange AVA™
 
 
 ## About the Book
